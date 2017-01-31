@@ -4,7 +4,14 @@ Presentation website
   
 Entry point: site/home.html  
   
-Demo (mp4/gif): https://www.dropbox.com/sh/l66banihalcxmsp/AAC4P_NKuBglEES6pR7_UR2Ba?dl=0  
+  ********************
+    Visit here:
+       http://mitproductions.ddns.net/thephotomaker/home.html
+  
+    OR, if server is down, check this out for the moment:
+  
+       Demo (mp4/gif): https://www.dropbox.com/sh/l66banihalcxmsp/AAC4P_NKuBglEES6pR7_UR2Ba?dl=0  
+  ********************
   
   
 //TODO:  
