@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> 
+	  ThePhotoMaker - Contact
+	</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="mainStyle.css" />
+	<link rel="stylesheet" type="text/css" href="contactStyle.css" />
+	<link rel="stylesheet" type="text/css" href="commonNotHomeStyle.css" />
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="custom.js"></script>
+    <script type="text/javascript" src="contactSubmit.js"></script>
+  </head>
+  
+  
+  <body>
+  
+     <header>
+         <p id="nume">
+				<a href="https://www.facebook.com/thephotomaker1" target="_blank">The Photo Maker</a>
+			</p>
+   
+   
+   
+         <nav id="menuNav">
+                 <ul id="menuList" class="mainMenu">  
+                 
+                     <li><a href="home.html" target="_self" class="menuOpt">Home</a></li>
+                 
+                     <li>
+                         <ul id="galleryList" class="mainMenu">
+						     <a href="gallery.html" target="_self" class="menuOpt">Gallery</a>
+                                <li><h4><a href="gallery.html#" target="_self" class="galleryOpt menuOpt">Landscape</a></h4></li>
+                                <li><h4><a href="gallery.html#" target="_self" class="galleryOpt menuOpt">Street</a>   </h4></li>
+                                <li><h4><a href="gallery.html#" target="_self" class="galleryOpt menuOpt">People</a>   </h4></li>
+                         </ul>
+                     </li>
+                 
+                     <li><a href="store.html" target="_self" class="menuOpt">Store</a></li>
+                 
+                     <li><a href="about.html" target="_self" class="menuOpt">About</a></li>
+                 
+                     <li><a href="contact.html" target="_self" class="menuOpt">Contact</a></li>
+                 
+                 </ul>
+         </nav>
+		 
+            <a id="i-nav" href="#">=</a>
+			
+     </header>
+    
+    
+    <form id="contactForm" enctype="text/plain" method="POST">
+        <fieldset id="nameFS">
+            <legend class="fl">Name *</legend>
+             
+            <div id="firstNameDiv" class="nameDiv">
+                <label id="nameL" class="fl">
+                    <input type="text" id="fNameI" class="common" required><br>First Name</label>
+            </div>
+            <div id="lastNameDiv" class="nameDiv">
+                <label class="fl">
+                    <input type="text" id="lNameI" class="common" required><br>Last name</label>
+             </div>
+             
+        </fieldset>
+        
+        <div class="formDiv">
+            <label class="fl">Email address *
+                <input type="email" id="mailI" class="fi common" required>
+            </label>
+        </div>
+        <div class="formDiv">
+             <label class="fl">Subject *
+                 <input type="text" id="subj" class="fi common" required>
+             </label>
+        </div>
+        <div class="formDiv"> 
+             <label class="fl">Message *
+                 <textarea id="txtArea" class="fi common" required></textarea>
+             </label>
+        </div>
+        <div id="divSmBn" class="formDiv">
+             <button type="submit" id="submitBtn">SUBMIT</button>
+		</div>
+    </form>
+    
+    
+     <footer id="homeFooter">
+         <a id="mailLink" href="mailto:teodor_im@yahoo.com">&copy; 2016, M.I.T. Productions</a>
+     </footer>
+   
+   
+  </body>
+</html>

@@ -1,0 +1,193 @@
+/* */
+body{
+	background-color: hsla(199, 18%, 40%, 1);
+	background-image: url(bg1.gif);
+	background-position: center 0px;
+}
+
+
+/* #############################  ABOUT ME  ############################## */
+
+section#aboutMeSctn{
+	position: relative;
+	top: 100px;
+	width: 70%;
+	min-height: 408px;
+	margin: 0 auto;
+	padding: 1%;
+	border-radius: 15px;
+	background-color: hsla(170, 18%, 46%, 0.8);
+}
+
+figure#portraitFgr{
+	width: 30%;
+	position: relative;
+	left: 5%;
+	top: 40px;
+}
+
+img#myPic{
+	width: 100%;
+	height: auto;
+	border: #FFF solid 12px;
+	border-radius: 150px;
+}
+
+article#aboutMeArtcl{
+	position: absolute;
+	top: 25px;
+	left: 45%;
+	width: 50%;
+	color: #FFF;
+	text-align: start;
+}
+
+#aboutMeArtcl > h2{
+	font-weight: 500;
+	margin-bottom: 15px;
+	text-decoration: underline;
+}
+
+#aboutMeSctn > h3{
+	font-weight: 400;
+	color: #FFF;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	position: absolute;
+	left: 3%;
+	bottom: 3%;
+	opacity: .6;
+}
+
+#aboutMeArtcl > h4{
+	font-weight: 400;
+	text-align: end;
+	/* margin-bottom: 10px; */
+}
+
+#aboutMeArtcl #p1{
+	margin-top: 20px;
+}
+
+#aboutMeArtcl #p2{
+	margin-top: 10px;
+}
+
+#aboutMeArtcl p{
+	text-indent: 2em;
+}
+
+/* #aboutMeArtcl p:hover{
+	color: #C8E6C9;
+} */
+
+
+/* ################################  MEDIA  ################################ */
+
+@media screen and (min-width: 1500px){
+	section#aboutMeSctn{
+		height: 550px;
+	}
+	
+	article#aboutMeArtcl{
+		top: 70px;
+	}
+	
+	#aboutMeArtcl > h2{
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+}
+
+/*  */
+@media screen and (max-width: 860px){
+	section#aboutMeSctn{
+		width: 75%;
+		height: 680px;
+		margin-bottom: 50px;
+	}
+	
+	figure#portraitFgr{
+		width: 30%;
+		left: 35%;
+		margin: 0 0 0 -15px; /*top right bottom left : -15px offset used to center the image*/
+	}
+	
+	img#myPic{
+		border: #FFF solid 12px;;
+	}
+	
+	article#aboutMeArtcl{
+		position: relative;
+		top: 55px;
+		left: 5%;
+		width: 90%;
+	}
+}
+
+/*  */
+@media screen and (max-width: 800px){
+	img#myPic{
+		border: #FDD835 solid 10px;
+	}
+	
+	#aboutMeArtcl > h2{
+		color: #FDD835;
+	}
+	
+	#aboutMeSctn > h3{
+		color: #FDD835;
+	}
+}
+
+/*  */
+@media screen and (max-width: 600px){
+	img#myPic{
+		border: #FDD835 solid 7px;
+	}
+	figure#portraitFgr{
+        width: 40%;
+        left: 30%;
+	}
+}
+
+/*  */
+@media screen and (max-width: 450px){
+	img#myPic{
+		border: #FDD835 solid 6px;
+	}
+	
+	section#aboutMeSctn{
+		height: 700px;
+	}
+	
+	
+	#aboutMeArtcl > h4{
+	text-align: start; 
+    }
+	
+	#aboutMeArtcl > h2{
+		font-size: 1.3em;
+	}
+}
+
+/*  */
+@media screen and (max-width: 390px){
+	section#aboutMeSctn{
+		height: 750px;
+	}
+}
+
+/*  */
+@media screen and (max-width: 340px){
+	section#aboutMeSctn{
+		height: 800px;
+	}
+}
+
+/*  */
+@media screen and (max-width: 320px){
+	section#aboutMeSctn{
+		height: 760px;
+	}
+}  

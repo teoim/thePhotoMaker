@@ -1,0 +1,25 @@
+
+/* */
+body{
+	background-image: none;
+}
+
+iframe#storeFrame{
+	display: inline-block;
+	width: 90%;
+	height: 520px;
+	position: relative;
+    top: 105px;
+	left: 5%;
+	border: none;
+	margin-bottom: 20px;
+}
+
+
+/* ################################  MEDIA  ################################ */
+
+@media screen and (max-width: 1024px){
+	iframe#storeFrame{
+        margin-bottom: 50px;
+	}
+}

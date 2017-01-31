@@ -1,0 +1,120 @@
+/* */
+body{
+	background-color: hsla(199, 18%, 40%, 1);
+	background-image: none;
+}
+
+
+/* ################################  GALLERY  ################################ */
+
+
+/* gallery container */
+div#galContainer{
+	position: fixed;
+	bottom: 0;
+	top: 0;
+	width: 100%;
+	height: auto;
+	margin-top: 61px;
+}
+
+
+/* photo viewer */
+div#screen{
+	position: relative;
+	width: 85%;
+	height: 80%;
+	margin: 5px auto;
+	text-align: center;
+}
+
+/* displayed img container - dimensioning problems
+figure#dispFig{
+	margin: 0px auto;
+	text-align: center;
+	max-height: 95%;
+}*/
+
+img#displayedImg{
+	height: 100%;
+	width: auto;
+	border-radius: 5px;
+}
+
+
+/* gallery section */
+section#gallerySection{
+	white-space:nowrap;   /* plaseaza imaginile pe o singura linie */ 
+	position: fixed;
+	/* right: 5%; */
+	left: 5%;
+	bottom: 0;
+	width: 90%;
+	height: 15%;/*80px;*/
+	overflow-y: hidden;
+	overflow-x: scroll;
+	text-align: center;
+	border-radius: 5px;
+}
+
+#gallerySection > h3{
+	color: #FFF;
+	font-weight: 500;
+	position: absolute;
+	left: 5px;
+	top: 0px;
+	opacity: .8;
+}
+
+figure.gal{
+	display: inline;
+	height: 100%;
+	width: auto;
+	margin: 1px 0;
+}
+
+.ph{
+	width: auto;
+	height: 100%;
+}
+
+.ph:hover{
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+.ph:active{
+	opacity: 1;
+	cursor: none;
+}
+
+
+
+/* ################################  FOOTER  ############################### */
+
+#homeFooter{
+	z-index: -1;
+}
+
+
+
+/* ################################  MEDIA  ################################ */
+
+@media screen and (max-width: 1024px){
+	#gallerySection > h3{
+		font-size: .9em;
+	}
+}
+
+@media screen and (max-width: 640px){
+	#gallerySection > h3{
+		font-size: .8em;
+	}
+}
+
+@media screen and (orientation: portrait){
+	img#displayedImg{
+		width: 100%;
+		height: auto;
+	}
+}
