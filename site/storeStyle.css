@@ -18,8 +18,16 @@ iframe#storeFrame{
 
 /* ################################  MEDIA  ################################ */
 
+
 @media screen and (max-width: 1024px){
 	iframe#storeFrame{
         margin-bottom: 50px;
+	}
+}
+
+
+@media screen and (min-width: 1500px){
+	iframe#storeFrame{
+		height: 840px;
 	}
 }

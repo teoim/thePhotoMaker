@@ -96,13 +96,13 @@ button#submitBtn:active{
 /* ################################  MEDIA  ################################ */
 
 
-@media screen and (max-width: 860px){
+@media (max-width: 860px){
 	form#contactForm{
 		margin-bottom: 50px;
 	}
 }
 
-@media screen and (max-width: 600px){
+@media (max-width: 600px){
 	
 	form#contactForm{
 		width: 75%;

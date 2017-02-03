@@ -1,17 +1,13 @@
 window.onload = myMain;
 
 
-function changeImg(x){
-    var dispImg = document.getElementById("displayedImg");
-    dispImg.src = getCorrespImg(x);
-}
 
-    /* used by changeImg() to get the hi-res photo link (different folder) */
-    function getCorrespImg(x){
-        var addrArr = x.src.split("/");
-        var name = addrArr[addrArr.length-1];
-        return "gallery/landscapes/1/" + name;
-    }
+/* gets the link of the hi-res photo to be displayed  (different folder) */
+function getCorrespImg(x){
+    var addrArr = x.src.split("/");
+    var name = addrArr[addrArr.length-1];
+    return "gallery/landscapes/1/" + name;
+}
 
 
 function myMain(){
@@ -19,9 +15,11 @@ function myMain(){
 
         var imgList = document.getElementsByClassName("ph");
         //alert(imgList.length + " photos found");
+		var dispImg = document.getElementById("displayedImg");
 
         for( img of imgList ){
-            img.addEventListener("click" , changeImg(img) , false);
+            img.addEventListener("click" , function(){ dispImg.src = getCorrespImg(this); } , false);
+            img.addEventListener("touchstart" , function(){ dispImg.src = getCorrespImg(this); } , false);
         }
 
     }
